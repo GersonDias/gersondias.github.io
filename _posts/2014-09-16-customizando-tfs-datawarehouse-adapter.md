@@ -6,9 +6,6 @@ tags: [TFS, Datawarehouse, Customização TFS]
 comments: true
 ---
 
-# Faça o TFS trabalhar para você: 
-## Customizando o TFS Datawarehouse 
-
 Um fato em qualquer empresa é a necessidade de informações. Todos os níveis hierárquicos podem se beneficiar das informações certas, providas no momento certo e a venda de uma ferramenta como o Team Foundation Server muitas vezes se pauta nesta necessidade: “E se vocês soubessem exatamente o requisito que deu origem a determinada linha de código?”, “E se você tivesse uma ferramenta que te provesse dados sobre o teu ambiente de desenvolvimento de software onde você pode combiná-los para conseguir informações diversas?”. Estas são frases que certamente as empresas que optaram pelo TFS já ouviram durante o processo de implantação da ferramenta. Porém, e no caso onde preciso cruzar dados provindos de outros sistemas com os dados do TFS para me dar uma visão completa de meu ambiente? E no caso onde preciso misturar dados de uma maneira diferente da que o TFS me entrega inicialmente? Nestas situações uma solução a ser avaliada é a customização do TFS Data Warehouse.
 
 O TFS Data Warehouse basicamente abrange uma base de dados relacional e uma base de dados analítica que agregam dados de todas os seus Team Project Collections e proveêm os dados para todos os relatórios que temos. Estas bases de dados podem ser atualizadas via plugins (ou Adapters) que rodam sob o processo TfsJobAgent do TFS. Você pode ter maiores detalhes desta arquitetura no MSDN e, se você for um bom administrador de TFS Server, não deixe de checar periodicamente o status destes adapters com a ajuda do webservice de administração do data warehouse:
@@ -16,7 +13,8 @@ O TFS Data Warehouse basicamente abrange uma base de dados relacional e uma base
 http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx
 ```
 e sempre de um Oi para seu TFS
-```http://your-server:8080/tfs/_oi/
+```
+http://your-server:8080/tfs/_oi/
 ```
 
 ### O problema que queremos resolver 
@@ -30,16 +28,16 @@ git clone https://github.com/GersonDias/TFSDatawarehouse.git
 
 Vamos dar uma olhada em como esta solução está estruturada:
 
-**WarehouseAdapterApplication:** São códigos utilizados pelo adapter que não estão vinculados a nenhuma versão do TFS, ou seja, este projeto não tem nenhuma referência às DLLs Microsoft.TeamFoundation.*
+* **WarehouseAdapterApplication:** São códigos utilizados pelo adapter que não estão vinculados a nenhuma versão do TFS, ou seja, este projeto não tem nenhuma referência às DLLs Microsoft.TeamFoundation.*
 
-**WarehouseAdapterTFS2012:** Projeto que contém as referência para os Assemblies Microsoft.TeamFoundation.* na versão 11.0 do (TFS 2012)
+* **WarehouseAdapterTFS2012:** Projeto que contém as referência para os Assemblies Microsoft.TeamFoundation.* na versão 11.0 do (TFS 2012)
 
-**WarehouseAdapterTFS2013:** Projeto que contém as referências para os Aseemblies Microsoft.TeamFoundation.* na versão 12.0 (TFS 2013)
+* **WarehouseAdapterTFS2013:** Projeto que contém as referências para os Aseemblies Microsoft.TeamFoundation.* na versão 12.0 (TFS 2013)
 
-**SetupWarehouseAdapter:** Projeto que contém os códigos necessários para a instalação e configuração do Adapter
+* **SetupWarehouseAdapter:** Projeto que contém os códigos necessários para a instalação e configuração do Adapter
 
-**WarehouseAdapterTestes:** Alguns pequenos testes do projeto
-
+* **WarehouseAdapterTestes:** Alguns pequenos testes do projeto
+<br/>
 _Alguns pontos importantes sobre a estruturação da solution:_
 
 * Apesar de particularmente gostar de versionar estas Dlls externas junto com o projeto, estas Dlls são proprietárias e não podem ser distribuidas publicamente. Por este motivo, você não vai encontrar um pacote Nuget com estas dependencias, e algumas delas não podem ser encontradas nem mesmo instalando o TFS 2013 Object Model. Assim, existem duas formas de obter estas Dlls: Instalar o TFS Express em sua máquina de desenvolvimento ou obter estes binários de um servidor do TFS.
