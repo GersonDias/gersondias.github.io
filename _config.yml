@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Estar Pronto é Tudo
+title:            Estar pronto Ã© tudo
 locale:           en_US
 url:              http://blog.gersondias.net
 
@@ -27,7 +27,7 @@ kramdown:
 # Site owner
 owner:
   name: Your Name
-  avatar: bio-photo.jpg
+  avatar: avatar.jpg
   bio: "Describe your self."
   email: 
   disqus-shortname: 
