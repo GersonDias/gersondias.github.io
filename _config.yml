@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title:            Estar pronto é tudo
-locale:           en_US
+locale:           pt_BR
 url:              http://blog.gersondias.net
 
 
@@ -26,30 +26,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Gerson Dias
   avatar: avatar.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  bio: "Consultor ALM, desenvolvedor de softwares e sonhador. Nisso e no mais, um aprendiz."
+  email: eu@gersondias.net
+  disqus-shortname: gerson_dias
+  twitter: GersonDias
+  facebook: GersonDias
   google:
-    plus: #username
-    analytics: 
-    verify: 
+    plus: GersonDias1812
+    analytics: "Blog GersonDias"
+    verify: "UA-54893505-1"
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
+  github: http://github.com/GersonDias
+  stackoverflow: http://stackoverflow.com/users/2453793/Gerson-Dias
+  linkedin: http://br.linkedin.com/in/gersondias
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
