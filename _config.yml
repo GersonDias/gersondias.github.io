@@ -40,9 +40,9 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: http://github.com/GersonDias
-  stackoverflow: http://stackoverflow.com/users/2453793/Gerson-Dias
-  linkedin: http://br.linkedin.com/in/gersondias
+  github: GersonDias
+  stackoverflow: 2453793/Gerson-Dias
+  linkedin: gersondias
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
