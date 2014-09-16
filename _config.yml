@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Estar Pronto é Tudo            
+title:            "Estar Pronto é Tudo"            
 locale:           pt_BR
 url:              http://blog.gersondias.net
 
@@ -26,16 +26,16 @@ kramdown:
 
 # Site owner
 owner:
-  name: Gerson Dias
+  name: "Gerson Dias"
   avatar: avatar.jpg
   bio: "Consultor ALM, desenvolvedor de softwares e sonhador. Nisso e no mais, um aprendiz"
   email: eu@gersondias.net
-  disqus-shortname: 
+  disqus-shortname: gerson_dias 
   twitter: http://twitter.com/gersondias
   facebook: http://facebook.com/gerson1812
   google:
     plus: http://plus.google.com/+gersondias1812
-    analytics: Blog GersonDias 
+    analytics: "Blog GersonDias" 
     verify: UA-54893505-1
     ad-client: 
     ad-slot: 
