@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: "Estar Pronto é Tudo"            
-locale: en_US
-url: http://blog.gersondias.net
+title:            'Estar Pronto é Tudo'
+locale:           en_US
+url:              http://blog.gersondias.net
 
 
 # Jekyll configuration
@@ -26,23 +26,30 @@ kramdown:
 
 # Site owner
 owner:
-  name: "Gerson Dias"
-  avatar: "avatar.jpg"
-  bio: "Consultor ALM, desenvolvedor de softwares e sonhador. Nisso e no mais, um aprendiz"
-  email: "eu@gersondias.net"
-  disqus-shortname: "gerson_dias" 
-  twitter: "http://twitter.com/gersondias"
-  facebook: "http://facebook.com/gerson1812"
+  name: Your Name
+  avatar: bio-photo.jpg
+  bio: "Describe your self."
+  email: 
+  disqus-shortname: 
+  twitter: #username
+  facebook: #username
   google:
-    plus: "http://plus.google.com/+gersondias1812"
-    analytics: "Blog GersonDias" 
-    verify: "UA-54893505-1"
+    plus: #username
+    analytics: 
+    verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: "http://github.com/GersonDias"
-  stackoverflow: "http://stackoverflow.com/users/2453793/Gerson-Dias"
-  linkedin: "http://br.linkedin.com/in/gersondias/"
+  github: #username
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
 
 include: [".htaccess"]
-excludj: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
