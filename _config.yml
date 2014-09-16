@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            "Estar Pronto é Tudo"            
-locale:           en_US
-url:              http://blog.gersondias.net
+title: "Estar Pronto é Tudo"            
+locale: en_US
+url: http://blog.gersondias.net
 
 
 # Jekyll configuration
