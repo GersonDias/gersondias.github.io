@@ -2,6 +2,7 @@
 
 ##Tables
 Primeira coluna | Segunda coluna
+----------------|----------------
 teste           | teste2
 teste           | teste4
 
@@ -10,10 +11,10 @@ teste           | teste4
 ```cs
 public static void Main(string[] args)
 {
-		Console.WriteLine('teste');
+		Console.WriteLine("teste");
 }
 ```
 
 ##Citações
-> Estar pronto é tudo
+> Estar pronto é tudo <br/>
 > -Willian Shaeskepeare
