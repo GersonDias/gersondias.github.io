@@ -7,14 +7,12 @@ comments: true
 ---
 
 Um fato em qualquer empresa é a necessidade de informações. Todos os níveis hierárquicos podem se beneficiar das informações certas, providas no momento certo e a venda de uma ferramenta como o Team Foundation Server muitas vezes se pauta nesta necessidade: “E se vocês soubessem exatamente o requisito que deu origem a determinada linha de código?”, “E se você tivesse uma ferramenta que te provesse dados sobre o teu ambiente de desenvolvimento de software onde você pode combiná-los para conseguir informações diversas?”. Estas são frases que certamente as empresas que optaram pelo TFS já ouviram durante o processo de implantação da ferramenta. Porém, e no caso onde preciso cruzar dados provindos de outros sistemas com os dados do TFS para me dar uma visão completa de meu ambiente? E no caso onde preciso misturar dados de uma maneira diferente da que o TFS me entrega inicialmente? Nestas situações uma solução a ser avaliada é a customização do TFS Data Warehouse.
-
-
 O TFS Data Warehouse basicamente abrange uma base de dados relacional e uma base de dados analítica que agregam dados de todas os seus Team Project Collections e proveêm os dados para todos os relatórios que temos. Estas bases de dados podem ser atualizadas via plugins (ou Adapters) que rodam sob o processo TfsJobAgent do TFS. Você pode ter maiores detalhes desta arquitetura no MSDN e, se você for um bom administrador de TFS Server, não deixe de checar periodicamente o status destes adapters com a ajuda do webservice de administração do data warehouse:
-
+<br/>
 ```
 http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx
 ```
-
+<br/>
 e sempre de um Oi para seu TFS
 
 ```
@@ -26,11 +24,11 @@ Agora, vamos ao problema que queremos resolver para este exemplo: um cliente rel
 
 ### A Solução 
 Primeiro e antes de mais nada, clone o repositório que está no GitHub: 
-
+<br/>
 ```
 git clone https://github.com/GersonDias/TFSDatawarehouse.git
 ```
-
+<br/>
 Vamos dar uma olhada em como esta solução está estruturada:
 
 * **WarehouseAdapterApplication:** São códigos utilizados pelo adapter que não estão vinculados a nenhuma versão do TFS, ou seja, este projeto não tem nenhuma referência às DLLs Microsoft.TeamFoundation.*
