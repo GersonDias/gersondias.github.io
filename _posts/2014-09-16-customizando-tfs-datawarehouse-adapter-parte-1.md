@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Customizando o TFS Datarehouse Adapter"
+title: "Customizando o TFS Datarehouse Adapter - Parte 1"
 excerpt: "Exemplo de customização do TFS Datawarehouse (TFS Datawarehouse Custom Adapter)."
-tags: [TFS, Datawarehouse, Customização TFS]
+tags: [TFS, Datawarehouse, Customização TFS, Team Foundation Server]
 comments: true
 ---
 
