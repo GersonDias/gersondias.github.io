@@ -1,0 +1,48 @@
+# Site wide configuration
+
+title:            Estar pronto é tudo
+locale:           pt_BR
+url:              http://blog.gersondias.net
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Gerson Dias
+  avatar: avatar.jpg
+  bio: "Consultor ALM, desenvolvedor de softwares e sonhador. Nisso e no mais, um aprendiz."
+  email: eu@gersondias.net
+  disqus-shortname: gerson_dias
+  twitter: GersonDias
+  facebook: gerson1812
+  google:
+    plus: GersonDias1812
+    analytics: "Blog GersonDias"
+    verify: "UA-54893505-1"
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: GersonDias
+  stackoverflow: 2453793/Gerson-Dias
+  linkedin: gersondias
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
