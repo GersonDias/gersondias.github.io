@@ -2,7 +2,7 @@
 
 title:            Estar pronto é tudo
 locale:           pt_BR
-url:              http://blog.gersondias.net
+url:              http://localhost:4000
 
 
 # Jekyll configuration
