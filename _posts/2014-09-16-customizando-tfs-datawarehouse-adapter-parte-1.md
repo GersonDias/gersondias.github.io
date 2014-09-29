@@ -7,14 +7,17 @@ comments: true
 ---
 
 Informações são necessárias em qualquer empresa. Os benefícios de informações corretas, providas no momento necessário, muitas vezes são utilizados como principais argumento de vendas do Team Foundation Server: _"E se vocês soubessem exatamente o requisito que deu origem à determinada linha de código?"_, _"E se vocês tivessem uma ferramenta que lhe provesse os dados sobre o teu ambiente de desenvolvimento de software, com a possibilidade de combinar estes dados para conseguir a informação que você precisa naquele momento?"_. Estas frases estão entre as que serão ouvidas durante o processo de venda ou de implementação de uma solução como o TFS.
-
+<br/>
 Porém, seria possível o cruzamento de dados de outros sistemas de gerenciamento já existente em minha empresa com os dados que são coletados pelo TFS? Seria possível "misturar" dados de uma maneira diferente da que o TFS me entrega por padrão? A resposta para estas perguntas é **sim** e para alcançar estes objetivos, uma das soluções é a customização do TFS Data Warehouse, por meio de um Adapter Customizado.
-
+<br/>
 O TFS Data Warehouse basicamente abrange uma base de dados relacional e uma base de dados analítica que agregam dados de todas os seus Team Project Collections e proveêm os dados para todos os relatórios que temos. Estas bases de dados podem ser atualizadas via plugins (ou Adapters) que rodam sob o processo TfsJobAgent do TFS. Você pode ter maiores detalhes desta arquitetura no [MSDN](http://msdn.microsoft.com/en-us/library/ms244687.aspx) e, se você for um [bom administrador do Team Foundation Server](http://pt.slideshare.net/ViniciusMoura4/como-ser-um-bom-administrador-de-team-foundation-server-vinicius-moura), não deixe de checar periodicamente o status destes adapters com a ajuda do webservice de administração do data warehouse:
+
 ```
 http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx
 ```
+
 e sempre de um Oi para seu TFS
+
 ```
 http://your-server:8080/tfs/_oi/
 ```
