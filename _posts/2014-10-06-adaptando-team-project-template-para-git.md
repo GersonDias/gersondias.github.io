@@ -8,7 +8,7 @@ comments: true
 
 Quando trabalhamos com customizações diversas nos Team Project Templates, devemos tomar alguns cuidados e esperar por algumas surpresas quando queremos utilizar recursos novos do TFS. No caso de hoje, temos o exemplo um Team Project Process Template com diversas customizações feitas na versão 2012 do Team Foundation Server. Ao atualizarmos para a versão 2013 a primeira coisa que queriamos testar era a criação de Team Projects que utilizassem o GIT como Source Control. Eis que encontramos a seguinte surpresa:
 
-{% highlight %}
+{% highlight text %}
 Error
 TF30177: The plugin Microsoft.ProjectCreationWizard.VersionControl failed during task VersionControlTask from group Version Control
 
