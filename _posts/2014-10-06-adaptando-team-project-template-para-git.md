@@ -7,12 +7,12 @@ comments: true
 ---
 
 Quando trabalhamos com customizações diversas nos Team Project Templates, devemos tomar alguns cuidados e esperar por algumas surpresas quando queremos utilizar recursos novos do TFS. No caso de hoje, temos o exemplo um Team Project Process Template com diversas customizações feitas na versão 2012 do Team Foundation Server. Ao atualizarmos para a versão 2013 a primeira coisa que queriamos testar era a criação de Team Projects que utilizassem o GIT como Source Control. Eis que encontramos a seguinte surpresa:
-
+<br/>
 ![The process template that you are using does not support Git]({{site.url}}/images/Create-Project-Git-Error.png)
-
+<br/>
 Para corrigir este erro, precisamos baixar o process template para a máquina local para que possamos editá-lo. No Visual Studio, vá no menu Team -> Team Project Collection Settings -> Process Template Manager. Escolha o template que você quer modificar e clique em Download. Aponte um caminho em sua máquina onde os arquivos serão salvos. Abra o arquivo .\Version Control\VersionControl.xml e coloque as seguintes linhas entre as tags <taskXml>:
 
-``` xml
+```
 <git>
         <permission allow="GenericRead, GenericContribute, ForcePush, Administer, CreateBranch, CreateTag, ManageNote" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />
         <permission allow="GenericRead, GenericContribute, CreateBranch, CreateTag, ManageNote" identity="[$$PROJECTNAME$$]\Contributors" />
