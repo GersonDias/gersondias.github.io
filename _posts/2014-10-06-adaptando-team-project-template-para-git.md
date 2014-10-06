@@ -24,7 +24,7 @@ Para corrigir este erro, precisamos baixar o process template para a máquina lo
 Salve o arquivo e volte para o Visual Studio. No Process Template Manager, faça o Upload do Process Template que acabamos de editar. Confirme que queremos fazer o *override* do template atual e tente criar o Team Project novamente. Problema resolvido!
 
 ### Lembre-se
-Quaisquer customização que fazemos no Team Foundation Server pode apresentar algum problema durante o upgrade de versão. Então esteja atento a isto e faça algo parecido com um *inventário* sobre todas as customizações que você tem no seu TFS. Leve isto em conta no planejamento do upgrade (seja de versões - 2012 para 2013 - ou de updates - 2013 update 2 para update 3).
+Qualquer customização que fizermos no Team Foundation Server pode apresentar algum problema durante um upgrade. Esteja ciente disto e faça algo parecido com um *inventário* com todas as customizações presentes no TFS e sempre leve isto em conta no planejamento do upgrade (seja de versões - 2012 para 2013 - ou de updates - 2013 update 2 para update 3).
 
 
 
