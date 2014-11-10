@@ -1,0 +1,12 @@
+---
+layout: post
+title: "TFS Hacks: Evitando que um checkin dispare a integração contínua"
+excerpt: "Como evitar que um checkin dispare o processo de integação contínua"
+tags: [TFS, Team Foundation Server, Build, CI, Continous Integration]
+comments: true
+---
+
+De tempos em tempos precisamos fazer o CheckIn de determinados arquivos que sabemos não trazerem significativas mudanças no nosso software e que não queremos que disparem todo um processo de build, no caso de termos definições de build com a trigger *Continous Integration*. Imagine a simples adição de um arquivo "readme" disparar o processo de build e, em algumas situações, um processo de deploy? Há uma dica bastante valiosa para estas situações: Basta incluir a string //***NO_CI***// no comentário do CheckIn e esta build não irá disparar a Integração Contínua.
+
+<br><br>
+Use com responsabilidade!
