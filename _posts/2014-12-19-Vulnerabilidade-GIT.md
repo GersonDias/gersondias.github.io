@@ -12,7 +12,7 @@ Para entender a causa do problema, precisamos lembrar que o Git guarda nos repos
 ```
 git config --local
 ```
-<br />
+<br /><br />
 Bom, a questão é que geralmente este arquivo de configuração local não é sobrescrito nos clients que baixam o repositório. Porém, este filtro que esta presente nos clients Git ignoram somente a pasta .git, não a .Git ou a .gIt, ou qualquer outra variação deste nome.
 
 Inicialmente este problema pode não parecer tão ruim, mas, se lembrarmos da possibilidade de renomearmos qualquer comando git com um alias (que ficam guardados no arquivo de configuração do repositório) e pode executar qualquer comando, um simples git push poderia formatar um computador ou ser a porta de entrada de malwares e tantos outros riscos possíveis. 
@@ -24,8 +24,8 @@ De qualquer forma, esta é uma vulnerabilidade nas aplicações clients do Git, 
 Apesar de, como já dito, esta ser uma vulnerabilidade dos clients, a Microsoft também lançou um path para o [TFS 2013 Update 4](http://go.microsoft.com/fwlink/?LinkId=523727)
 
 Para maiores informações:<br/>
-- http://blogs.msdn.com/b/bharry/archive/2014/12/18/git-vulnerability-with-git-config.aspx <br>
-- http://msysgit.github.io/<br>
-- https://github.com/blog<br>
+- [Brian Harry Blog](http://blogs.msdn.com/b/bharry/archive/2014/12/18/git-vulnerability-with-git-config.aspx) <br/>
+- [Msysgit](http://msysgit.github.io)/<br/>
+- [Blog do GitHub](https://github.com/blog)<br/>
 
 Abraços!
