@@ -9,7 +9,6 @@ comments: true
 Hoje foi divulgada a descoberta de uma vulnerabilidade nas entranhas do código fonte do Git que permite que pessoas mal intencionadas tomem o controle de uma máquina que baixe um repositório "infectado". 
 
 Para entender a causa do problema, precisamos lembrar que o Git guarda nos repositórios locais um arquivo chamado 'config', dentro da pasta .git. Esse arquivo contém uma série de configurações referentes aquele repositório em específico e geralmente é alterado com o comando 
-
 ```
 git config --local
 ```
@@ -25,8 +24,8 @@ De qualquer forma, esta é uma vulnerabilidade nas aplicações clients do Git, 
 Apesar de, como já dito, esta ser uma vulnerabilidade dos clients, a Microsoft também lançou um path para o [TFS 2013 Update 4](http://go.microsoft.com/fwlink/?LinkId=523727)
 
 Para maiores informações:<br/>
-* http://blogs.msdn.com/b/bharry/archive/2014/12/18/git-vulnerability-with-git-config.aspx
-* http://msysgit.github.io/
-* https://github.com/blog
+- http://blogs.msdn.com/b/bharry/archive/2014/12/18/git-vulnerability-with-git-config.aspx <br>
+- http://msysgit.github.io/<br>
+- https://github.com/blog<br>
 
 Abraços!
