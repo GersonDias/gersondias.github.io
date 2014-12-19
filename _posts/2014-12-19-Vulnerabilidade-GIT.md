@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Customizando o TFS Datawarehouse - Parte 1"
-excerpt: "Exemplo de customização do TFS Datawarehouse (TFS Datawarehouse Custom Adapter)."
-tags: [TFS, Datawarehouse, Customização TFS, Team Foundation Server]
+title: "Vulnerabilidade encontrada no Git"
+excerpt: "Uma grave vulnerabilidade foi descoberta nos clientes Git"
+tags: [TFS, Git, Vulnerabilidades, Segurança]
 comments: true
 ---
 
