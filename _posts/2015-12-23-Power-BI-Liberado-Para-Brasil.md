@@ -23,19 +23,19 @@ O Power BI é uma funcionalidade do Office 365, portanto você precisa de uma as
 
 ## Conectando ao VSTS
 Ao entrar no PowerBI, você verá uma tela de "Get Started" onde você pode selecionar a opção Service para se conectar a diversos serviços: 
-![Power BI - Get Data]({{site.url}}/images/powerbi/getdata.png)
+![Power BI - Get Data]({{site.url}}/images/pwb.getdata.png)
 
 Escolha o serviço Visual Studio Online e clique em Connect 
-![Visual Studio Online Data Connector]({{site.url}}/images/powerbi/visualstudioonline.png)
+![Visual Studio Online Data Connector]({{site.url}}/images/pwb.visualstudioonline.png)
 
 Digite o nome da sua conta do VSTS (o nome dela, não a URL dela) e o nome do Team Project que você quer ter maiores informações: 
-![Visual Studio Connection 1]({{site.url}}/images/powerbi/connection1.png)
+![Visual Studio Connection 1]({{site.url}}/images/pwb.connection1.png)
 
 Clique em SignIn e aceite as permissões necessárias para o PowerBI conectar-se ao VSTS: 
-![Visual Studio Connection 2]({{site.url}}/images/powerbi/connection2.png)
+![Visual Studio Connection 2]({{site.url}}/images/pwb.connection2.png)
 
 Feito isto, basta aguardar o Dashboard inicial do PowerBI ficar pronto (pode demorar alguns bons minutos). Divirta-se vendo top commiters, bug trend, situação das sprints e muitas outras informações! 
-![PowerBI Dashboard]({{site.url}}/images/powerbi/dashboard.png)
+![PowerBI Dashboard]({{site.url}}/images/pwb.dashboard.png)
 
 ## Finalizando
 Não deixe de explorar todo o potencial desta ferramenta, que faz com que um dos principais gaps entre o TFS e o VSTS seja superado com maestria! 
