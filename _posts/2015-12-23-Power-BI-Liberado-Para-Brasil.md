@@ -7,6 +7,7 @@ comments: true
 ---
 
 Sem muito alarde a Microsoft liberou o acesso à ferramenta [PowerBI](http://powerbi.com) aos Brasileiros. Apesar desta ferramenta já estar disponível há algum tempo para a grande maioria do mundo, por algum motivo a Microsoft deixou mercados importantes como o Brasil e a China para uma segunda leva de liberação de acesso. Para quem ainda não teve contato com esta ferramenta, imagine a funcionalidade PowerPivot do Excel melhorada, rodando na nuvem e com diversos conectores para muitos serviços, estejam eles na nuvem ou rodem localmente, entre eles: 
+
  * GitHub
  * AppInsights
  * Visual Studio Team Service (antigo Visual Studio Online)
