@@ -37,7 +37,7 @@ Vamos fazer o preenchimento inicial de nosso arquivo de manifesto. Consulte a [d
 Este arquivo contém diversas outras propriedades que serão necessárias adiante, conforme formos preenchendo estas propriedades entraremos em detalhe sobre elas. Neste momento, o melhor é que acompanhe em tempo real a evolução deste arquivo no nosso [repositório do GitHub](https://github.com/GersonDias/vso-workItemChecklist/blob/master/vso-WIChecklists/vss-extension.json)
 
 ##Contribution Point
-Uma propriedade fundamental presente no arquivo _vss.extension.json_ é a `contributions`. Esta propriedade define __onde__ nossa extensão será carregada dentro do VSTS. Em nossa extension, queremos uma nova tab no formulário do _workitem_, então nossa `contribution` ficará da seguinte forma:
+Uma propriedade fundamental presente no arquivo _vss.extension.json_ é a __contributions__. Esta propriedade define __onde__ nossa extensão será carregada dentro do VSTS. Em nossa extension, queremos uma nova tab no formulário do _workitem_, então nossa __contribution__ ficará da seguinte forma:
 
 ```
 "contributions": [
@@ -57,9 +57,10 @@ Uma propriedade fundamental presente no arquivo _vss.extension.json_ é a `contr
 ```
 
 ##Testando a extensão
-Uma das propriedades existentes no arquivo _vss.extension.json_ é a `baseUri` é justamente ela quem fala qual o endereço base que a o VSTS irá chamar quando for carregar a sua extensão. A única regra aqui é que o endereço seja https! Então, iremos executar nosso projeto utilizando o IIS Express para fins de desenvolvimento, então mude esta propriedade para `https://localhost:44300/` e vamos fazer nossa primeira publicação para testes. Não se esqueça de manter a propriedade `"public": false` para evitar que outras pessoas vejam nossa extensão.
+Uma das propriedades existentes no arquivo _vss.extension.json_ é a __baseUri__ é justamente ela quem fala qual o endereço base que a o VSTS irá chamar quando for carregar a sua extensão. A única regra aqui é que o endereço seja https! Então, iremos executar nosso projeto utilizando o IIS Express para fins de desenvolvimento, então mude esta propriedade para `https://localhost:44300/` e vamos fazer nossa primeira publicação para testes. Não se esqueça de manter a propriedade __"public": false__ para evitar que outras pessoas vejam nossa extensão.
 
 Para fazermos nossa publicação, precisamos instalar a ferramenta _TFS Cross Platform Command Line Interface_. Para instalá-la, na linha de comando, digite:  
+
 ```
 npm install -g tfx-cli
 ```
@@ -72,7 +73,7 @@ Após a instalação ou update da ferramenta, digite a seguinte linha de comando
 tfx extension create --manifest-globs vss-extension.json
 ```
 
-Agora você verá um arquivo com o seguinte formato em seu diretório `<publisher>.<extensionId>-<version>.vsix` este é o pacote de nossa extensão.
+Agora você verá um arquivo com o seguinte formato em seu diretório __<publisher>.<extensionId>-<version>.vsix__ este é o pacote de nossa extensão.
 
 ###Publicando a extensão
 Antes de publicar nossa extensão, precisamos obter nosso token de acesso para que a ferramenta _tfx_ possa fazer a publicação por nós. Entre em na página `https://<your_account_url>/_details/security/tokens` e siga os passos do _wizard_ para criar seu _personal token_. 
