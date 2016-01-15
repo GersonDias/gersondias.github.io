@@ -11,7 +11,7 @@ Com o arquivo de manifesto pronto, podemos partir para o desenvolvimento de noss
 ##Inicializando a aplicação
 Você pode desenvolver a sua aplicação da maneira que achar melhor, com os componentes que quiser e seguindo a arquitetura que achar melhor. Não há nenhum tipo de restrições impostas pelo VSTS para suas aplicações. A única questão a tomar atenção na página de sua aplicação (que foi definida no arquivo de manifesto), é inicializar o SDK do VSTS, com o seguinte código:
 
-```
+``` 
 <body>
     <script type="text/javascript">
         // Initialize the VSS sdk
@@ -30,7 +30,8 @@ Você pode desenvolver a sua aplicação da maneira que achar melhor, com os com
         });
     </script>
     ...
-```
+``` 
+
 
 Como a intensão desta série de artigos não é focar no desenvolvimento da parte web da extensão e sim nos pontos de integração com a plataforma do VSTS, como prova de conceito, iremos utilizar o código de exemplo contido no site [todomvc](http://todomvc.com/examples/typescript-angular/), mostrando um todo/checklist com as funcionalidades básicas utilizando Angular + Typescript. Veja o código no [repositório do projeto de exemplo](https://github.com/tastejs/todomvc/tree/gh-pages/examples/typescript-angular) e continue acompanhando nosso [repositório](https://github.com/GersonDias/vso-workItemChecklist).
 
