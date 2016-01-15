@@ -11,8 +11,7 @@ Com o arquivo de manifesto pronto, podemos partir para o desenvolvimento de noss
 ##Inicializando a aplicação
 Você pode desenvolver a sua aplicação da maneira que achar melhor, com os componentes que quiser e seguindo a arquitetura que achar melhor. Não há nenhum tipo de restrições impostas pelo VSTS para suas aplicações. A única questão a tomar atenção na página de sua aplicação (que foi definida no arquivo de manifesto), é inicializar o SDK do VSTS, com o seguinte código:
 
-``` 
-<body>
+```<body>
     <script type="text/javascript">
         // Initialize the VSS sdk
         VSS.init({
