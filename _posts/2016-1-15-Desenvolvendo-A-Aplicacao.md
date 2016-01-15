@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VSTS Extensions Parte 3 - Desenvolvendo a aplicação"
-excerpt: "Como desenvolver novas funcionalidades para o VSTS"
+excerpt: "Analizando o fluxo de desenvolvimento de extensões para VSTS"
 tags: [VSTS, DESENVOLVIMENTO, EXTENSÕES]
 comments: true
 ---
