@@ -38,7 +38,7 @@ Como resultado de nossa codificação, temos a seguinte imagem:
  
 Neste ponto você verá que apesar de funcional, nossa extensão ainda não é utilizável, afinal o mesmo checklist é exibido em todos os workitems. No próximo artigo iremos explorar os pontos de integração disponíveis para as extensões e os serviços de armazenamento de dados e busca de informações sobre o contexto da ação do usuário dentro do VSTS.
 
-Até a próxima!
+Até a próxima!!
 
 ####Posts anteriores:
 * [Desenvolvendo Extensões para o Visual Studio Team Services - Parte 1](http://blog.gersondias.net/Desenvolvendo-Extensoes-Para-O-Visual-Studio-Team-Services/) 
