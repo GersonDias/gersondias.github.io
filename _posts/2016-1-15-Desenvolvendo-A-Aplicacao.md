@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VSTS Extensions Parte 2 - O arquivo de Manifesto"
+title: "VSTS Extensions Parte 3 - Desenvolvendo a aplicação"
 excerpt: "Como desenvolver novas funcionalidades para o VSTS"
 tags: [VSTS, DESENVOLVIMENTO, EXTENSÕES]
 comments: true
