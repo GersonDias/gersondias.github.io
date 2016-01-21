@@ -37,7 +37,7 @@ VSS.require(['TFS/WorkItemTracking/Services'], function (workItemService) {
 {% endraw %}
 {% endhighlight %}
 
-O método require retorna o serviço que passamos como parâmetro em uma função `callback`. Devido a natureza assíncrona e o desejo que a UI não congele enquanto esperamos o retorno de nossos serviços, a API do VSTS utiliza em larga escala as `promisses`. Neste código, como fizemos para obter o ID do Workitem (linha 3) e, além disto, modificamos o método `get` do serviço `todoStorage` para receber este ID como parâmetro.
+O método require retorna o serviço que passamos como parâmetro em uma função `callback`. Devido a natureza assíncrona e o desejo que a UI não congele enquanto esperamos o retorno de nossos serviços, a API do VSTS utiliza em larga escala as `promisses`. Neste código, repare como fizemos para obter o ID do Workitem (linha 3) e, além disto, modificamos o método `get` do serviço `todoStorage` para receber este ID como parâmetro.
 
 O código do serviço ficou da seguinte forma:
 
