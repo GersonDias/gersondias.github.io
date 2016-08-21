@@ -17,13 +17,13 @@ Tudo bem, seguimos adiante. Grande parte das vezes também guiei estas empresas 
 
 Com o tempo meu espanto em ouvir este tipo de coisas foi diminuindo. De qualquer forma, estas mesmas pessoas falavam coisas do tipo:
 
-"Olha, aqui criamos a metodologia <Nome da Empresa>Agile. Isto porque somos diferentes, em nosso ambiente agimos assim e assado, mas queremos adotar as metodologias ágeis!".
+"Olha, aqui criamos a metodologia `<Nome da Empresa>Agile`. Isto porque somos diferentes, em nosso ambiente agimos assim e assado, mas queremos adotar as metodologias ágeis!".
 
-Antes de continuar, vou abrir um adendo da ferramenta que geralmente puxa esta palavra (apenas lembre-se que o foco aqui não é a ferramenta em si). No VSTS, quando criamos um projeto, podemos escolher qual o Template que ele irá utilizar. Este Template trará diferenças principalmente no trato com os Itens de Trabalho, que terão informações diferentes que devem ser preenchidos pelas pessoas que trabalham naquele projeto. Por padrão, temos três diferentes templates: CMMI, Agile, Scrum.
+Antes de continuar, vou abrir um adendo da ferramenta que geralmente puxa esta discussão (apenas lembre-se que o foco aqui não é a ferramenta em si). No VSTS, quando criamos um projeto, podemos escolher qual o Template que ele irá utilizar. Este Template trará diferenças principalmente no trato com os Itens de Trabalho, que terão informações diferentes que devem ser preenchidos pelas pessoas que trabalham naquele projeto. Por padrão, são eles: CMMI, Agile, Scrum.
 
 Bom, é hora de escolher o Template de Projeto para a ferramenta. De cara, o CMMI é descartado, afinal "queremos ser ágeis!". O Scrum também é descartado, afinal "xii, Scrum não funciona aqui!" e ficamos com a escolha do template Agile, afinal, "queremos ser ágeis"! Neste momento, o cliente sente que está "Instalando a Agilidade na empresa" e tenho que ser o primeiro a dar a notícia: *Não é a escolha do Template de Projeto da ferramenta que irá te tornar Ágil!".
 
-##O Scrum não importa
+## O Scrum não importa
 O Scrum não importa, o Kanban não importa, o Crystal não importa... nenhum Framework importa, porque você será Ágil se você _for_ ágil.
 
 Ops, mas o que isso significa?
@@ -41,16 +41,16 @@ Este modelo foi proposto por Robert Dilts e Todd Epstein, e mostra como a psique
 1. E nossa visão de mundo vem de nosso local mais profundo, vem de nossos ideais (em algumas referências, este nível é chamado de Espírito)
 
 Como exemplo, imagine que você está em um baile de dança de salão. Você vê os casais dançando e sente vontade de dançar também (o ambiente agindo sobre você). Porém você não tem esta habilidade ou capacidade e nem acredita ser um dançarino, então você não irá dançar.
-Agora imagine que você esta neste mesmo baile e sentiu uma conexão e viu aqueles rostos sorridentes, aqueles corpos dançando em harmonia com a música e toda aquela magia e viu que aquilo tem tudo a ver com o que você acredita. Neste momento houve uma conexão com aquela atividade (aquilo foi em conformidade com os seus Ideais). Você então passou a acreditar que aquilo é possível e você quer fazer isso, então você se vê e É um dançarino. Então procurará uma escola de dança para aprimorar suas capacidades e o seu comportamento em um baile será dançar.
+Agora imagine que você esta neste mesmo baile e sentiu uma conexão e viu aqueles rostos sorridentes, aqueles corpos dançando em harmonia com a música e toda aquela magia e viu que aquilo tem tudo a ver com o que você acredita. Neste momento houve uma conexão com aquela atividade (aquilo foi em conformidade com os seus Ideais). Você então passou a acreditar que aquilo é possível e você quer fazer isso, então você se *vê* e *É* um dançarino. Então procurará uma escola de dança para aprimorar suas capacidades. Então, seu comportamento em um baile será dançar.
 
-Ok, mas que relação isso tem com a Agilidade e desenvolvimento de software? Bom, se você quer ser Ágil, não é um Framework que te fará Ágil e sim os princípios ágeis. Estes princípios estariam no nível das Crenças no modelo proposto e você só será Ágil se (e somente se) elas estiverem de acordo com a Visão e Ideais da sua empresa. 
+Ok, mas que relação isso tem com a Agilidade e desenvolvimento de software? Bom, se você quer ser Ágil, não é um Framework e muito menos um template de uma ferramenta que te fará Ágil, mas sim os princípios ágeis. Estes princípios estariam no nível das Crenças no modelo proposto e você só será Ágil se (e somente se) elas estiverem de acordo com a Visão e Ideais da sua empresa. 
 
 Aqui temos mais um ponto de atenção: Quando falo dos princípios ágeis, não estou falando _somente_ destes:
 
-Indivíduos e interações mais que processos e ferramentas
-Software em funcionamento mais que documentação abrangente
-Colaboração com o cliente mais que negociação de contratos
-Responder a mudanças mais que seguir um plano
+* Indivíduos e interações mais que processos e ferramentas
+* Software em funcionamento mais que documentação abrangente
+* Colaboração com o cliente mais que negociação de contratos
+* Responder a mudanças mais que seguir um plano
 
 Estou sim falando dos 12 Princípios Ágeis:
 
