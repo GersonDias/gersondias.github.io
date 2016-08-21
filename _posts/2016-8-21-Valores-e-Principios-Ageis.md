@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Valores e princípios ágeis (ou porque o Scrum não é importante)"
+title: 'Valores e princípios ágeis (ou "Porque o Scrum não é importante")'
 excerpt: "Não importa a metodologia utilizada, siga os Princípios Ágeis"
 tags: [Agilidade]
 comments: true
