@@ -27,17 +27,17 @@ Dias
 Estes dados soltos não significam nada, é preciso dar semântica à estes dados. Então podemos organizar estes dados em uma forma melhor estruturada, em uma tabela com colunas que indiquem o que estes dados significam:
 
 | Name   | MiddleName | LastName | BirthDay   | PhoneNumber | SocialNumber |
-|--------|------------|----------|------------|-------------|--------------|
+|:-------|:-----------|:---------|:-----------|:------------|:-------------|
 | Gerson | Afonso     | Dias     | 1986-08-31 | 112233445   | 12344563665  |
 
 Assim sabemos exatamete que esta tabela guarda a informações de pessoas e quais são as partes de informações que posso utilizar. Porém, como posso recuperar os dados de uma pessoa específica dentro do meu sistema? Como vou saber se aqueles dados são do Gerson e não da Juliana? Como poderei exibir ou utilizar os dados de uma pessoa específica?
 
 Bom, a estratégia mais comum é identificarmos um elemento que seja único de cada linha de minha tabela. Se alguém pensou que o elemento "SocialNumber" poderia ser este item que identifica unicamente uma pessoa, você pode estar errado dependendo do tipo de pessoas que fazem parte do seu sistema (por exemplo, em um consultório médico que atende crianças e adultos, pode ser que o SocialNumber seja compartilhado em mãe e a criança). Então, a prática mais comum é que tenhamos um elemento gerado automaticamente pelo nosso sistema que garanta que seja único, a famosa ```Primary Key```:
 
-| ID | Name | Middle Name | Last Name | BirthDay | PhoneNumber | SocialNumber |
-|----|------|-------------|-----------|----------|-------------:|--------:|
-1 | Gerson | Afonso | Dias | 1986-08-31 | 112233445 | 12344563665
-2 | Ana | | Barros | 1984-12-04 | 1123332 | 1123332323
+| ID | Name   | Middle Name | Last Name | BirthDay   | PhoneNumber | SocialNumber |
+|----|--------|-------------|-----------|------------|------------:|-------------:|
+1    | Gerson | Afonso      | Dias      | 1986-08-31 | 112233445   | 12344563665  |
+2    | Ana    |             | Barros    | 1984-12-04 | 1123332     | 1123332323   |
 
 A estratégia de gerar um ID sequencial é uma das mais utilizadas, porém trás alguns incovenientes como a possibilidade de uma pessoa má intencionada poder identificar de maneira fácil detalhes sobre a sua base de dados, como "quantos clientes este sistema possuí" ou poder tentar utilizar o ID de outra pessoa para alguma operação que ela não está autorizada a fazer. De qualquer forma, tirando este aspecto de segurança, a utilização de chaves sequenciais trás uma enorme vantagem para a recuperação dos dados: Se eu quiser o ID número 88923, sabendo que esta tabela é sequencial, o banco de dados pode utilizar um algoritmo de busca binária para achar o registro correto de forma muito eficiente. Se você utilizar os comandos específicos do SQL Server para analizar o plano de execução de sua consulta, este caso aparecia como ```Index Seek```. Porém, como eu posso definir a melhor forma de ordenação de minha tabela, para que eu possa recuperar os dados da forma mais eficiente possível? Bom, é aí que entram os índices.
 
