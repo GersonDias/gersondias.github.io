@@ -44,9 +44,9 @@ A estratégia de gerar um ID sequencial é uma das mais utilizadas, porém trás
 Vamos imaginar que em meu sistema eu tenho em vários pontos pesquisas pelo SocialNumber (afinal é uma informação que a pessoa sabe, dificilmente ela irá se lembrar do ID dela em seu sistema), e digamos que sempre que eu procuro pelo SocialNumber eu queira recuperar também o nome da pessoa, afinal quero exibir esta informação para o usuário final. Bom, então por que não guardar estas informações específicas em algum lugar diferente para que esta informação possa ser recuperada de forma ainda mais rápida? Por que não utilizar algo deste tipo:
 
 | ID | SocialNumber | Name   |
-|----|--------------|--------|
+|:---|:-------------|:-------|
 | 1  | 12344563665  | Gerson |
-| 2  | 1123332323   | Ana    | 
+| 2  | 1123332323   | Ana    |
 
 Sendo uma estrutura de dados menor, é mais simples para o banco de dados fazer esta busca e sempre que você fizer uma busca pelo SocialNumber ele utilizará esta estrutura de dados que é chamada de ```Non clustered Index```. Eu posso ter quantos indices deste tipo eu quiser em minhas tabelas, organizando os dados dela para que sejam recuperadas da maneira mais eficiente possível. Porém, há alguns pontos à se considerar:
 
